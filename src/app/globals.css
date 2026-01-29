@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+  /* ALB Property Color Palette - Earthy & Premium */
+  --color-forest: #2D5A3D;
+  --color-forest-dark: #1E3D29;
+  --color-gold: #C9A227;
+  --color-gold-light: #D4B94A;
+  --color-cream: #FAF8F5;
+  --color-charcoal: #1A1A1A;
+  --color-stone: #6B6B6B;
+}
+
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  background: var(--color-cream);
+  color: var(--color-charcoal);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", Georgia, serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Selection color */
+::selection {
+  background: var(--color-forest);
+  color: white;
+}
+
+/* Utility classes */
+.text-forest {
+  color: var(--color-forest);
+}
+
+.text-gold {
+  color: var(--color-gold);
+}
+
+.bg-forest {
+  background-color: var(--color-forest);
+}
+
+.bg-gold {
+  background-color: var(--color-gold);
+}
+
+.bg-cream {
+  background-color: var(--color-cream);
+}
+
+/* Hero gradient overlay */
+.hero-overlay {
+  background: linear-gradient(to bottom,
+      rgba(0, 0, 0, 0.4) 0%,
+      rgba(0, 0, 0, 0.2) 50%,
+      rgba(0, 0, 0, 0.5) 100%);
+}
+
+/* Button styles */
+.btn-primary {
+  background: var(--color-forest);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: var(--color-forest-dark);
+  transform: translateY(-2px);
+}
+
+.btn-outline {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 1rem 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: white;
+  color: var(--color-forest);
+}
+
+/* Section padding */
+.section-padding {
+  padding: 5rem 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 7rem 3rem;
+  }
+}

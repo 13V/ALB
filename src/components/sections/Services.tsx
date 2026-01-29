@@ -23,6 +23,12 @@ const SERVICES = [
         description:
             "Smart watering solutions to keep your gardens healthy while saving water and reducing costs.",
     },
+    {
+        icon: "✨",
+        title: "Exterior Cleaning",
+        description:
+            "Professional soft washing and pressure cleaning to keep your property's exterior looking its absolute best.",
+    },
 ];
 
 export function Services() {

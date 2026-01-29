@@ -40,13 +40,20 @@ export function Navbar() {
                     {["Services", "Projects", "About", "Contact"].map((item) => (
                         <Link
                             key={item}
-                            href={`#${item.toLowerCase()}`}
+                            href={item === "Exterior Cleaning" ? "/exterior-cleaning" : `/#${item.toLowerCase()}`}
                             className={`text-sm font-medium uppercase tracking-wider transition-colors hover:text-[#C9A227] ${scrolled ? "text-[#1A1A1A]" : "text-white"
                                 }`}
                         >
                             {item}
                         </Link>
                     ))}
+                    <Link
+                        href="/exterior-cleaning"
+                        className={`text-sm font-medium uppercase tracking-wider transition-colors hover:text-[#C9A227] ${scrolled ? "text-[#1A1A1A]" : "text-white"
+                            }`}
+                    >
+                        Exterior Cleaning
+                    </Link>
                     <a
                         href="tel:0400000000"
                         className="btn-primary text-sm"
@@ -85,13 +92,20 @@ export function Navbar() {
                         {["Services", "Projects", "About", "Contact"].map((item) => (
                             <Link
                                 key={item}
-                                href={`#${item.toLowerCase()}`}
+                                href={item === "Exterior Cleaning" ? "/exterior-cleaning" : `/#${item.toLowerCase()}`}
                                 onClick={() => setMobileOpen(false)}
                                 className="text-lg font-medium text-[#1A1A1A] hover:text-[#2D5A3D]"
                             >
                                 {item}
                             </Link>
                         ))}
+                        <Link
+                            href="/exterior-cleaning"
+                            onClick={() => setMobileOpen(false)}
+                            className="text-lg font-medium text-[#1A1A1A] hover:text-[#2D5A3D]"
+                        >
+                            Exterior Cleaning
+                        </Link>
                         <a href="tel:0400000000" className="btn-primary text-center mt-4">
                             Get Quote
                         </a>
